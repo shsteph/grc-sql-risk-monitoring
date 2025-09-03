@@ -1,0 +1,63 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "sanctioned_countries" (
+	"country_name"	TEXT,
+	"regulation_body"	TEXT,
+	"list_type"	TEXT,
+	"is_active"	INTEGER
+);
+INSERT INTO "sanctioned_countries" VALUES ('North Korea','FATF','Blacklist','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Iran','FATF','Blacklist','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Myanmar','FATF','Blacklist','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Algeria','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Angola','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Bolivia','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Bulgaria','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Burkina Faso','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Cameroon','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Côte d’Ivoire','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Democratic Republic of Congo','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Haiti','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Kenya','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Lao PDR','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Lebanon','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Monaco','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Mozambique','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Namibia','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Nepal','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Nigeria','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('South Africa','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('South Sudan','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Syria','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Venezuela','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Vietnam','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Virgin Islands (UK)','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Yemen','FATF','Grey List','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Cuba','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Iran','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('North Korea','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Russia','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Syria','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Crimea','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Donetsk','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Luhansk','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Zaporizhzhia','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Kherson','OFAC','Comprehensive','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Afghanistan','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Balkans','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Belarus','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Burma (Myanmar)','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Central African Republic','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Democratic Republic of the Congo','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Ethiopia','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Hong Kong','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Iraq','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Lebanon','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Libya','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Nicaragua','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Somalia','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('South Sudan','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Sudan','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Venezuela','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Yemen','OFAC','Targeted','yes');
+INSERT INTO "sanctioned_countries" VALUES ('Zimbabwe','OFAC','Targeted','yes');
+COMMIT;
